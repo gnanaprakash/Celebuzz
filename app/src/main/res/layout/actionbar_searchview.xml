@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/actionBar_SearchView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="100">
+
+    <ImageButton
+        android:id="@+id/imageButton_back"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="12"
+        android:background="#00000000"
+        android:src="@drawable/ic_arrow_back_black_24dp" />
+
+    <org.droidparts.widget.ClearableEditText xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/editText_search"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="86"
+        android:drawableRight="@drawable/ic_close_black_24dp"
+        android:gravity="bottom|left"
+        android:hint="@string/search_hint"
+        android:imeOptions="actionSearch"
+        android:inputType="textFilter"
+        android:singleLine="true"
+        android:textSize="18sp" />
+
+</LinearLayout>
+
